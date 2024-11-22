@@ -4,56 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Básico de CSS</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado -->
     <header>
         <h1>Taller Básico de CSS</h1>
-        <p>Descripción del taller y objetivos.</p>
+        <p>Aprendiendo a diseñar con CSS</p>
     </header>
-    
-    <!-- Contenedor principal -->
-    <div id="contenedor">
-        <!-- Barra de navegación -->
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        
-        <!-- Imagen principal -->
-        <div id="imgPrinc">
-            <p>Texto sobre la imagen principal</p>
+
+    <nav>
+        <ul>
+            <li id="rojo"><a href="#shopping">Lista de Compras</a></li>
+            <li><a href="#recipe">Receta</a></li>
+            <li><a href="#ingredients">Ingredientes</a></li>
+        </ul>
+    </nav>
+
+    <section id="shopping">
+        <h2>Lista de Compras</h2>
+        <ul>
+            <li>Humous</li>
+            <li>Pitta</li>
+            <li>Ensalada verde</li>
+            <li>Halloumi</li>
+        </ul>
+    </section>
+
+    <section id="recipe">
+        <h2>Receta</h2>
+        <ol>
+            <li>Tostar el pitta, dejar enfriar y luego cortar.</li>
+            <li>Freír el halloumi en una sartén antiadherente hasta dorar.</li>
+            <li>Lavar y picar la ensalada.</li>
+            <li>Rellenar el pitta con ensalada, humous y halloumi frito.</li>
+        </ol>
+    </section>
+
+    <section id="ingredients">
+        <h2>Descripción de Ingredientes</h2>
+        <dl>
+            <dt>Humous</dt>
+            <dd>Una salsa espesa hecha de garbanzos, tahini, limón y ajo.</dd>
+            <dt>Pitta</dt>
+            <dd>Un pan plano ligeramente fermentado.</dd>
+            <dt>Halloumi</dt>
+            <dd>Un queso semiduro que no se derrite fácilmente.</dd>
+            <dt>Ensalada verde</dt>
+            <dd>Una mezcla de vegetales verdes frescos.</dd>
+        </dl>
+    </section>
+
+    <footer>
+        <div>
+            <p>© 2022 Taller de CSS. Todos los derechos reservados.</p>
         </div>
-        
-        <!-- Aside con secciones -->
-        <aside>
-            <section>Alarma</section>
-            <section>Calendario</section>
-            <section>Música</section>
-        </aside>
-        
-        <!-- Bloques de planes -->
-        <div class="planes">
-            <p>Plan 1</p>
-        </div>
-        <div class="planes">
-            <p>Plan 2</p>
-        </div>
-        
-        <!-- Bloque de cita -->
-        <blockquote>
-            <p>Cita o comentario relevante.</p>
-        </blockquote>
-        
-        <!-- Pie de página -->
-        <footer>
-            <p>Información de contacto.</p>
-        </footer>
-    </div>
+    </footer>
 </body>
 </html>
-
