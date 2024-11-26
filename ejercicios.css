@@ -1,0 +1,23 @@
+
+p {
+    background-color: crimson; /* Color carmesí */
+}
+
+
+.par {
+    background-color: maroon; /* Color granate */
+}
+
+div.par {
+    background-color: pink; /* Color rosa */
+}
+
+
+#parr {
+    background-color: green; /* Color verde */
+}
+
+
+#parr:last-of-type {
+    background-color: red; /* Color rojo */
+}

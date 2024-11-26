@@ -14,7 +14,7 @@ body {
     font-size: 100%;
     font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
     color: #FFF;
-    background: url(../img/bg.jpg) no-repeat center center;
+    background: url("fondo1.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -25,47 +25,40 @@ header {
 }
 
 header h1 {
-    font-family: 'Merienda One', cursive;
+    font-family: "merienda-one";
     font-size: 2em;
+    color: #FFF;
 }
 
 header p {
     font-size: 1.3em;
 }
 
-#imgPrinc {
-    position: relative;
-}
-
-#imgPrinc p {
-    background-color: rgb(255, 85, 70);
-    width: 50%;
-    padding: 15px;
-    position: absolute;
-    bottom: 0px;
+header h1, header p {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 800px;
 }
 
 span:nth-child(1) { color: #FF0; }
 span:nth-child(2) { color: #0FF; }
 span:nth-child(3) { color: #F00; }
 
-header h1, header p {
-    width: 80%;
-    margin: 0px auto;
-    min-width: 800px;
-}
-
 #contenedor {
     width: 80%;
     min-width: 800px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 nav {
     width: 100%;
     overflow: auto;
     font-weight: bold;
-    margin: 15px 0px;
+    margin: 15px 0;
+}
+
+nav ul {
+    list-style: none;
 }
 
 nav li {
@@ -74,15 +67,11 @@ nav li {
 }
 
 nav li:first-child {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 li#rojo {
     background-color: red;
-}
-
-nav ul {
-    list-style: none;
 }
 
 nav a {
@@ -97,8 +86,18 @@ nav a:hover {
 #imgPrinc {
     width: 100%;
     height: 400px;
-    background: url("../img/agustin3.jpg") no-repeat center center;
+    background: url("principal.jpg") no-repeat center center;
     background-size: cover;
+    position: relative;
+}
+
+#imgPrinc p {
+    background-color: rgb(255, 85, 70);
+    width: 50%;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
 }
 
 #imgPrinc + p {
@@ -106,7 +105,7 @@ nav a:hover {
     font-size: 1.3em;
     font-style: italic;
     padding: 20px;
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
 aside {
@@ -115,23 +114,35 @@ aside {
 }
 
 aside section {
-    height: 70px;
+    height: auto; /* Ajuste dinámico al contenido */
+    min-height: 150px; /* Tamaño mínimo para una buena visualización */
     margin-bottom: 10px;
     padding: 10px 10px 10px 30%;
     background: rgb(255,85,70) no-repeat 5% center;
+    background-size: cover; /* Se asegura de que la imagen cubra el fondo */
 }
 
+/* Especificar las imágenes correctamente */
 section:nth-child(1) {
-    background-image: url("../img/alarm.svg");
+    background-image: url("alarma1.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section:nth-child(2) {
-    background-image: url("../img/calendar.svg");
+    background-image: url("calendario2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section:nth-child(3) {
-    background-image: url("../img/music.svg");
-    margin-bottom: 0px;
+    background-image: url("musica.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 
 .planes {
@@ -144,20 +155,23 @@ section:nth-child(3) {
 
 .planes p {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     background-color: rgb(255, 85, 70);
-    padding: 5px 0px;
+    padding: 5px 0;
     width: 100%;
     text-align: center;
+    color: #FFF;
 }
 
 .planes:nth-child(5) {
-    margin: 0px 2%;
-    background: url("../img/popayan2.jpg") no-repeat center center;
+    margin: 0 2%;
+    background: url("popayan.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 .planes:nth-child(6) {
-    background: url("../img/puri.jpg") no-repeat center center;
+    background: url("extemo.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 blockquote {
@@ -175,6 +189,7 @@ footer {
     width: 100%;
     padding: 30px 0;
     background: rgb(70,70,70);
+    overflow: auto;
 }
 
 footer div {
@@ -191,4 +206,18 @@ footer img {
 footer p {
     float: left;
     padding-top: 12px;
+}
+
+    footer {
+    width: 100%;
+    padding: 30px 0;
+    background: url("fondo\ de\ pantalla.avif") no-repeat center center; /* Ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    color: #FFF; /* Cambia el color del texto para que sea visible */
+    overflow: auto;
+
+}
+footer i {
+    font-size: 40px; 
+    margin-right: 20px; 
 }

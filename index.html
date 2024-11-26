@@ -3,61 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller Básico de CSS</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fundamentos CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script src="https://use.edgefonts.net/merienda-one.js"></script>
+   
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+<div>
     <header>
-        <h1>Taller Básico de CSS</h1>
-        <p>Aprendiendo a diseñar con CSS</p>
+        <h1>Viaja <span>Colo</span><span>mb</span><span>ia</span></h1>
+        <p>¡Vive la experiencia Colombia!</p>  
     </header>
 
-    <nav>
-        <ul>
-            <li id="rojo"><a href="#shopping">Lista de Compras</a></li>
-            <li><a href="#recipe">Receta</a></li>
-            <li><a href="#ingredients">Ingredientes</a></li>
-        </ul>
-    </nav>
-
-    <section id="shopping">
-        <h2>Lista de Compras</h2>
-        <ul>
-            <li>Humous</li>
-            <li>Pitta</li>
-            <li>Ensalada verde</li>
-            <li>Halloumi</li>
-        </ul>
-    </section>
-
-    <section id="recipe">
-        <h2>Receta</h2>
-        <ol>
-            <li>Tostar el pitta, dejar enfriar y luego cortar.</li>
-            <li>Freír el halloumi en una sartén antiadherente hasta dorar.</li>
-            <li>Lavar y picar la ensalada.</li>
-            <li>Rellenar el pitta con ensalada, humous y halloumi frito.</li>
-        </ol>
-    </section>
-
-    <section id="ingredients">
-        <h2>Descripción de Ingredientes</h2>
-        <dl>
-            <dt>Humous</dt>
-            <dd>Una salsa espesa hecha de garbanzos, tahini, limón y ajo.</dd>
-            <dt>Pitta</dt>
-            <dd>Un pan plano ligeramente fermentado.</dd>
-            <dt>Halloumi</dt>
-            <dd>Un queso semiduro que no se derrite fácilmente.</dd>
-            <dt>Ensalada verde</dt>
-            <dd>Una mezcla de vegetales verdes frescos.</dd>
-        </dl>
-    </section>
+    <div id="contenedor">
+        <nav>
+            <ul>
+                <li id="amarillo"><a href="#">HOME</a></li>
+                <li id="azul"><a href="#">PLANES</a></li>
+                <li id="rojo"><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav> 
+        <div id="imgPrinc"> 
+            <p>Estrecho del Magdalena - Huila, Colombia.</p>
+        </div>
+        <p>Disfruta de los mejores planes turísticos que puedas imaginar a los mejores precios del mercado.</p>
+        <aside>
+            <section>
+                <p>Garantizamos 100% de puntualidad en todas nuestras actividades.</p> 
+            </section>
+            <section>
+                <p>Puedes escoger entre el amplio calendario que tenemos disponible.</p>
+            </section>
+            <section>
+                <p>Tenemos actividades diseñadas para el perfil de cada uno de los turistas.</p>
+            </section>
+        </aside>
+        <div class="planes">
+            <p>Planes urbanos</p>
+        </div>
+        <div class="planes">
+            <p>Planes rurales</p>
+        </div>
+        <blockquote>
+            "Ha sido el mejor viaje que he realizado en mi vida, las actividades fueron muy interesantes. Sin duda repetiría esta experiencia." @tucan2011
+        </blockquote>
+    </div>
 
     <footer>
         <div>
-            <p>© 2022 Taller de CSS. Todos los derechos reservados.</p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a>
+            <a href="https://www.x.com/" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+            
+            <p>Contacto: info@viajacol.co - (57-1 7694234)</p>
         </div>
     </footer>
+</div>
 </body>
 </html>
